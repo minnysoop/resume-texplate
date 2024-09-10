@@ -19,10 +19,10 @@
 
 \newenvironment{Experience}[4][Experience]
     {
-        \textbf{#1} \hfill #2 \vspace{0.5mm} \\ \textit{#3} \hfill #4
+        \textbf{#1} \hfill #2 \vspace{0.3mm} \\ \textit{#3} \hfill #4
         \begin{itemize}
-            \vspace{-1mm}
-            \setlength\itemsep{-1mm}
+            \vspace{-1.3mm}
+            \setlength\itemsep{-1.3mm}
     }
     { 
         \end{itemize}
@@ -32,17 +32,17 @@
 \newenvironment{Section}[1][Section]
     {
         \subsection*{#1}
-        \vspace{4pt}
+        \vspace{3pt}
         \hrule
-        \vspace{4pt}
+        
     }
     {
-
+        \vspace{-3mm}
     }
 
 \newenvironment{Education}[3][Education]
     {
-        \begin{addmargin}[5mm]{5mm}
+        \begin{addmargin}[2mm]{2mm}
             \textbf{#1} \hfill #2 \\ #3 \\
     }
     {
@@ -52,7 +52,7 @@
 
 \newenvironment{Skill}[2][Skill]
     {
-        \begin{addmargin}[5mm]{5mm}
+        \begin{addmargin}[2mm]{2mm}
         \textbf{#1} \hspace{5mm} #2
     }
     {
