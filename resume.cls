@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resume}[2024/08/17 v0.1 Resume]
+\ProvidesClass{resume}[2024/09/11 v0.3 Resume]
 
 \LoadClass[12pt]{article}
 
 \usepackage[parfill=0pt]{parskip}
-\usepackage[a4paper,left=20mm,right=20mm,top=15mm]{geometry}
+\usepackage[a4paper,left=10mm,right=10mm,top=13mm]{geometry}
 \usepackage{nopageno}
 \usepackage{scrextend}
 \nofiles
@@ -21,8 +21,9 @@
     {
         \textbf{#1} \hfill #2 \vspace{0.3mm} \\ \textit{#3} \hfill #4
         \begin{itemize}
-            \vspace{-1.3mm}
-            \setlength\itemsep{-1.3mm}
+            \vspace{-2mm}
+            \setlength\itemsep{-1.8mm}
+            \setlength\leftskip{-2mm}
     }
     { 
         \end{itemize}
@@ -37,7 +38,7 @@
         
     }
     {
-        \vspace{-3mm}
+        \vspace{-2mm}
     }
 
 \newenvironment{Education}[3][Education]
@@ -52,9 +53,10 @@
 
 \newenvironment{Skill}[2][Skill]
     {
-        \begin{addmargin}[2mm]{2mm}
+        \begin{addmargin}[3mm]{3mm}
         \textbf{#1} \hspace{5mm} #2
     }
     {
         \end{addmargin}
+        \vspace{-2mm}
     }
